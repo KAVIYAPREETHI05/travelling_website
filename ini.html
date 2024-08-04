@@ -1,0 +1,159 @@
+<html>
+<head>
+    <title>HTML and CSS Slideshow</title>
+    <style>
+    body {
+        font-family: Helvetica, sans-serif;
+        padding: 5%;
+        text-align: center;
+        font-size: 50;
+    }
+     
+    /* Styling the area of the slides */
+     
+    #slideshow {
+        overflow: hidden;
+        height: 510px;
+        width: 728px;
+        margin: 0 auto;
+    }
+     
+    /* Style each of the sides
+    with a fixed width and height */
+     
+    .slide {
+        float: left;
+        height: 550px;
+        width: 728px;
+    }
+     
+    /* Add animation to the slides */
+     
+    .slide-wrapper {
+         
+        /* Calculate the total width on the
+      basis of number of slides */
+        width: calc(728px * 7);
+         
+        /* Specify the animation with the
+      duration and speed */
+        animation: slide 15s ease infinite;
+    }
+     
+    /* Set the background color
+    of each of the slides */
+     
+    .slide:nth-child(1) {
+        background-image: url("image/img1.JPG");
+        background-size: cover;
+    }
+     
+    .slide:nth-child(2) {
+        background-image: url("images/7.png");
+        background-size: cover;
+    }
+     
+    .slide:nth-child(3) {
+        background-image: url("https://img.traveltriangle.com/blog/wp-content/uploads/2020/02/Cover-image-of-Scuba-Diving-in-netrani-island.jpg");
+        background-size: cover;
+    }
+     
+    .slide:nth-child(4) {
+        background-image: url("https://ozzieausband.files.wordpress.com/2015/07/unnamed-8.jpg");
+        background-size: cover;
+    }
+    .slide:nth-child(5) {
+        background-image: url("https://www.lakeplacid.com/f/page/34622/skating-in-lake-placid-mirror-lake.jpg");
+        background-size: cover;
+    }
+    .slide:nth-child(6) {
+        background-image: url("https://c4.wallpaperflare.com/wallpaper/343/939/786/base-dive-diving-extreme-wallpaper-preview.jpg");
+        background-size: cover;
+    }
+    .slide:nth-child(7) {
+        background-image: url("https://c4.wallpaperflare.com/wallpaper/343/939/786/base-dive-diving-extreme-wallpaper-preview.jpg");
+        background-size: cover;
+    }
+   
+     
+    /* Define the animation
+    for the slideshow */
+     
+    @keyframes slide {
+         
+        /* Calculate the margin-left for
+      each of the slides */
+        10% {
+            margin-left: 0px;
+        }
+        20% {
+            margin-left: calc(-728px * 1);
+        }
+        30% {
+            margin-left: calc(-728px * 2);
+        }
+        40% {
+            margin-left: calc(-728px * 3);
+        }
+        50%{
+            margin-left: calc(-728px *4);
+        }
+        60%{
+            margin-left: calc(-728px *5);
+        }
+        70%{
+            margin-left: calc(-728px *6);
+        }
+        
+    }
+    </style>
+</head>
+ 
+<body>
+     
+    <!-- Define the slideshow container -->
+    <div id="slideshow">
+        <div class="slide-wrapper">
+             
+            <!-- Define each of the slides
+         and write the content -->
+            <div class="slide">
+                <h1 class="slide-number">
+                    GeeksforGeeks
+                </h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                    A computer science portal
+                </h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                    This is an example of
+                </h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                    Slideshow with HTML and CSS only
+                </h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                    Slideshow with HTML and CSS only
+                </h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                    Slideshow with HTML and CSS only
+                </h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                    Slideshow with HTML and CSS only
+                </h1>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

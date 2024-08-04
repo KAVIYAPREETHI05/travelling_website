@@ -1,0 +1,90 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Alfa Slab One', cursive;
+	
+}
+body{
+	display:flex;
+	justify-content: center;
+	background: rgb(123, 219, 246);
+}
+html{
+	overflow-x:hidden;
+	scroll-behavior: smooth;
+	stop-opacity: 7rem;
+
+}
+.header{
+font-size: 50px;
+color:black;
+font-weight: 200;
+align-items: center;
+
+
+
+}
+
+.header p{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+}
+header p:hover{
+    background: white;
+    transition: 0.5s;
+}
+.header p:hover{
+    color: black;
+}
+
+
+.container{
+
+	position: relative;
+	width:1500px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(20rem,2fr));
+	gap:1.5rem;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding: 30px;
+	margin-top: 10px;
+}
+
+.container .card{
+	width:250px;
+	position: relative;
+	height: 300px;
+	background: #f0f0f0;
+	margin:30px 10px;
+	padding: 20px 15px;
+	display:flex;
+	flex-direction: column;
+	box-shadow: 0.5px 10px #e6e6e6;
+	transition:0.3s ease-in-out;
+	margin-top: 10%;
+}
+.container .card .imgBx{
+	position: relative;
+	width:200px;
+	height: 200px;
+	top: 0px;
+	left:20px;
+	box-shadow: 0 5px 20px rbga (0,0,0,1.2);
+
+}
+
+.container .card .imgBx img
+{
+	max-width: 100%;
+	border-radius: 10px;
+}
+
+.imgBx:hover img{
+	transform: scale(1.1);
+}

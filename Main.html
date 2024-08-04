@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Explore</title>
+        
+        <link rel="stylesheet" href="css/style(1).css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="https://freepngimg.com/save/168104-travel-icon-free-download-png-hq/2597x2530">
+    </head>
+    <body>
+        <!--header-->
+        <header class="header">
+            <a href="#" class="logo"> The Explore </a>
+        
+            <nav class="navbar">
+                <a href="Main.html">Home</a>
+                <a href="#services">Services</a>
+                <a href="bus.html">Travel</a>
+                <a href="#contact">Contact</a>
+                <a href="login.html">Get start</a>
+               
+            </nav>
+        
+            <div id="menu-btn" class="fas fa-bars"></div>
+        
+        </header>
+
+        <div class="scrollable">
+        <div class="banner">
+            <video autoplay loop muted plays-inline>
+                <source src="images/video1.mp4" type="video/mp4">
+            </video>
+        
+            
+            <div class="content">
+                <h1>EXPLORE TN!!</h1>
+                <div>
+                    <button type="button"><a href="travel.html">Explore</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--our services-->
+    <section>
+        <h5 id="services">OUR SERVICES</h5>
+        <p class="section-lead">Travelling is a brutality. It forces you to trust strangers and to lose sight of all that familiar comforts of home and friends. You are constantly off balance. Nothing is yours ecept the essential things. Air, Sleep, Dream, the sea, The sky-all things tending towards the eternal or what we imagine of it.</p>
+        <div class="services-grid">
+          <div class="service service1">
+            <i class="ti-bar-chart"></i>
+            <h4>Travel</h4>
+            <p> Travel exposes you to new cultures, traditions, languages, and ways of life. This firsthand experience helps you develop a deeper understanding and appreciation for diversity, broadening your perspective on the world..</p>
+            <a href="#" class="cta">...<span class="ti-angle-right"></a>
+          </div>
+      
+          <div class="service service2">
+            <i class="ti-light-bulb"></i>
+            <h4>Explore</h4>
+            <p> Traveling takes you out of your comfort zone, encouraging personal growth and self-discovery. Facing new challenges, adapting to different environments, and navigating unfamiliar situations can boost your confidence and problem-solving skills..</p>
+            <a href="#" class="cta">... <span class="ti-angle-right"></a>
+          </div>
+      
+          <div class="service service3">
+            <i class="ti-money"></i>
+            <h4>Discover</h4>
+            <p> It's a pathway to personal growth, cultural enrichment, and a broader understanding of the world around us.As we navigate the challenges and joys of travel, we not only create cherished memories but also cultivate a deeper connection to the global community and our own sense of self..</p>
+            <a href="#" class="cta">... <span class="ti-angle-right"></span></a>
+          </div>
+        </div>
+      </section>
+      <!--slideshow-->
+
+      <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            padding: 5%;
+            text-align: center;
+            font-size: 50;
+        }
+         
+        /* Styling the area of the slides */
+         
+        #slideshow {
+            overflow: hidden;
+            height: 510px;
+            width: 728px;
+            margin: 0 auto;
+        }
+         
+        /* Style each of the sides
+        with a fixed width and height */
+         
+        .slide {
+            float: left;
+            height: 550px;
+            width: 728px;
+        }
+         
+        /* Add animation to the slides */
+         
+        .slide-wrapper {
+             
+            /* Calculate the total width on the
+          basis of number of slides */
+            width: calc(728px * 7);
+             
+            /* Specify the animation with the
+          duration and speed */
+            animation: slide 15s ease infinite;
+        }
+         
+        /* Set the background color
+        of each of the slides */
+         
+        .slide:nth-child(1) {
+            background-image: url("images/bungee-jumping.jpg");
+            background-size: cover;
+            color:whitesmoke;
+        }
+         
+        .slide:nth-child(2) {
+            background-image: url("images/ice\ skating.jpg");
+            background-size: cover;
+            color:black;
+        }
+         
+        .slide:nth-child(3) {
+            background-image: url("images/sea\ skating.jpg");
+            background-size: black;
+            color:antiquewhite;
+        }
+         
+        .slide:nth-child(4) {
+            background-image: url("images/Paragliding.jpg");
+            background-size: cover;
+            color:white;
+        }
+        .slide:nth-child(5) {
+            background-image: url("images/sky\ diving.jpg");
+            background-size: cover;
+            color:whitesmoke;
+        }
+        .slide:nth-child(6) {
+            background-image: url("images/sea\ diving.jpg");
+            background-size: cover;
+            color:black;
+        }
+        .slide:nth-child(7) {
+            background-image: url("images/river\ rafting.jpg");
+            background-size: cover;
+            color:white;
+        }
+       
+       
+         
+        /* Define the animation
+        for the slideshow */
+         
+        @keyframes slide {
+             
+            /* Calculate the margin-left for
+          each of the slides */
+            10% {
+                margin-left: 0px;
+            }
+            20% {
+                margin-left: calc(-728px * 1);
+            }
+            30% {
+                margin-left: calc(-728px * 2);
+            }
+            40% {
+                margin-left: calc(-728px * 3);
+            }
+            50%{
+                margin-left: calc(-728px *4);
+            }
+            60%{
+                margin-left: calc(-728px *5);
+            }
+            70%{
+                margin-left: calc(-728px *6);
+            }
+            
+        }
+        
+        </style>
+    </head>
+     
+    <body>
+         
+        <!-- Define the slideshow container -->
+        <div id="slideshow">
+            <div class="slide-wrapper">
+                 
+                <!-- Define each of the slides
+             and write the content -->
+                <div class="slide">
+                    <h1 class="slide-number">
+                      JOBS FILL YOUR POCKETS,<br>
+                      ADVENTURES FILL YOUR SOUL
+                    </h1>
+                </div>
+                <div class="slide">
+                    <h1 class="slide-number">
+                        TRAVEL FAR ENOUGH,<br>
+                        YOU MEET YOURSELF 
+                    </h1>
+                </div>
+                <div class="slide">
+                    <h1 class="slide-number">
+                        HAVE STORIES TO TELL,<br>
+                        NOT STUFF TO SHOW
+                    </h1>
+                </div>
+                <div class="slide">
+                    <h1 class="slide-number">
+                      TRAVEL IS THE HEALTHIEST ADDICTION,<br>
+                      & INVESTMENT IN YOURSELF 
+                    </h1>
+                </div>
+                <div class="slide">
+                    <h1 class="slide-number">
+                        LIVE WITH NO EXCUSES,<br>
+                        TRAVEL WITH NO REGRETS
+                    </h1>
+                </div>
+                <div class="slide">
+                    <h1 class="slide-number">
+                      
+                      LOVE IS THE FOOD OF LIFE,<br>
+                      TRAVEL IS DESSERT
+                     
+                    </h1>
+                </div>
+                <div class="slide">
+                    <h1 class="slide-number">
+                      MEMORIES LIVE LONGER THAN THINGS
+                    </h1>
+                    
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+<!-- for contact -->
+<section>
+  
+ 
+    
+    <div class="section-header">
+      <div class="container">
+        <h2 id="contact us">CONTACT US</h2>
+        <p class="section-lead">Travelling leaves you speechless, then it turns you into storyteller!!<br>If you have any queries please Contact Us.</p>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            
+            <div class="contact-info-content">
+              <h4>Address</h4>
+              <p>Bannari Amman Institute of Technology, Sathyamangalam, Erode, <br/>638401</p>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            
+            <div class="contact-info-content">
+              <h4>Phone</h4>
+              <p>91-9283764934<br>91-9834635764</p>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            
+            <div class="contact-info-content">
+              <h4>Email</h4>
+             <p>sky@bitsathy.ac.in</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form action="/send-email" method="post" id="contact-form">
+            <h2>Send Message</h2>
+            <div class="input-box">
+              <input type="text" required="true" id="fullname" placeholder="FullName" name="">
+              <!-- <span>Full Name</span> -->
+            </div>
+            
+            <div class="input-box">
+              <input type="email" required="true" id="to" placeholder="Email" name="to">
+              <!-- <span>Email</span> -->
+            </div>
+            
+            <div class="input-box">
+              <textarea required="true" name="message" id="message" placeholder="Type your Message..."></textarea>
+              <!-- <span>Type your Message...</span> -->
+            </div>
+            
+            <div class="input-box">
+              <input type="submit" value="Send" name="">
+            </div>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  
+       
+      
+    
+        
+          
+     
+<!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+             <div class="footer-col">
+                 <h4 id="contact">follow us</h4>
+                 <div class="social-links">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="https://www.instagram.com/travel._travelling/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                 </div>
+             </div>
+                
+                <div class="footer-col">
+                    <h4>Phone</h4>
+                    <ul>
+                        <li><a href="#">91-6385674653</a></li>
+                        <li><a href="#">91-9834529768</a></li>
+                        <li><a href="#">91-7398401097</a></li>
+                    
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Email</h4>
+                    <ul>
+                        <li><a href="#">kaviyapreethi.cs22@bitsathy.ac.in</a></li>
+                        <li><a href="#">keerthanasm.cs22@bitsathy.ac.in</a></li>
+                        <li><a href="#">mohanadevi.cs22@bitsathy.ac.in</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+   </footer>
+          <script src="js/main.js"></script>          
+    </body>
+</html>
